@@ -34,4 +34,57 @@ print(clear_set)
 print(clear_set) # working fine
 # again adding elements to the clear_set
 clear_set = {100,105,110,120}
-print(clear_set)
+print(clear_set) 
+#output {120, 105, 100, 110}
+#dictionary 
+sample_dict ={"name":"lion", "family":"cat", "type":"carnivorous"}
+print(sample_dict) 
+#output
+#{'name': 'lion', 'family': 'cat', 'type': 'carnivorous'}
+#fetching values using key in dictionary
+sample_dict["family"] 
+#output
+#'cat'
+#fetching keys seperately from the dictionary
+sample_dict.keys() 
+#output
+#dict_keys(['name', 'family', 'type'])
+#converting it to list by typecasting
+list(sample_dict.keys()) 
+#output
+#['name', 'family', 'type']
+#fetching values seperately from the dictionary
+sample_dict.values()
+#output
+#dict_values(['lion', 'cat', 'carnivorous'])
+#converting values from dictionary to list by typecasting
+list(sample_dict.values())
+#output 
+#['lion', 'cat', 'carnivorous'] 
+#Replacing/mutable actions in dictionaries
+sample_dict ={"name":"lion", "family":"cat", "type":"carnivorous"}
+sample_dict["type"] = "nocturnal"
+print(sample_dict)
+#adding elements in dictionary
+sample_dict["color"] = "yellow"
+print(sample_dict)
+#removing elements from dictionary
+del sample_dict["color"]
+print(sample_dict)
+#another method for removing elements
+sample_dict["color"] = "yellow"
+print(sample_dict)
+del sample_dict["color"]
+print(sample_dict) 
+#condtional statements
+a = 25
+b = 124
+if (a+b)<200:
+ print("lesser than 200")
+if (a+b)>=200:
+ print("greater than 200")
+
+
+
+
+
